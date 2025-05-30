@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MR.COFFEE - Menu</title>
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+  <nav>
+    <div class="brand-name">
+      <a href="./index.html">
+        <h1>
+          MR.COFFEE
+        </h1>
+      </a>
+    </div>
+     <button class="hamburger-menu">
+      <img src="./assets/icons/hamburger.svg" alt="menu">
+    </button>
+    <div class="navigations">
+      <ul>
+        <li>
+          <a href="./index.html" class="bold">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="./about-us.htm" class="bold">
+            ABOUT US
+          </a>
+        </li>
+        <li>
+          <a href="./rewards.html" class="bold">
+            REWARDS
+          </a>
+        </li>
+        <li class="bold">
+          MENU
+        </li>
+        <li>
+          <a href="./order.htm" class="bold">
+            ORDER
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="main-header">
+      <h2 class="poppins bold title">
+        MENU
+      </h2>
+      <hr>
+      <div class="filter-icon filter" id="filterIcon">
+        <img src="./assets/icons/filter_alt_24dp_434343_FILL0_wght400_GRAD0_opsz24.svg" alt="filter-icon" >
+
+        <div class="filter-modal" id="filterModal">
+          <h3>
+            Filter
+          </h3>
+          <div class="filter-option">
+            <label for="coffee-filter">
+              Coffee
+            </label>
+            <input type="checkbox" id="coffee-filter" value="coffee">
+          </div>
+          <div class="filter-option">
+            <label for="non-coffee-filter">
+              Non Coffee
+            </label>
+            <input type="checkbox" id="non-coffee-filter" value="non-coffee">
+          </div>
+          <div class="filter-option">
+            <label for="snack-filter">
+              Snack
+            </label>
+            <input type="checkbox" id="snack-filter" value="snack">
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="main-content">
+      <div class="sub-menu coffee">
+        <h2 class="sub-menu-title poppins bold">
+          COFFEE
+        </h2>
+
+       <div class="sub-menu-content">
+        <div class="item" 
+            data-item-name="Brown Sugar Brew" 
+            data-item-path="./assets/images/kopisusu.png" 
+            data-item-price="100000">
+          <div class="image">
+            <img src="./assets/images/kopisusu.png" alt="kopi susu">
+          </div>
+          <h3 class="item-name">Brown Sugar Brew</h3>
+          <p class="item-price">Rp100,000</p>
+        </div>
+
+          <div class="item" 
+              data-item-name="Caffe Latte" 
+              data-item-path="./assets/images/latte.png" 
+              data-item-price="90000">
+            <div class="image">
+              <img src="./assets/images/latte.png" alt="latte">
+            </div>
+            <h3 class="item-name">Caffe Latte</h3>
+            <p class="item-price">Rp90,000</p>
+          </div>
+
+          <div class="item" 
+              data-item-name="Double Shot Espresso" 
+              data-item-path="./assets/images/espreso.png" 
+              data-item-price="75000">
+            <div class="image">
+              <img src="./assets/images/espreso.png" alt="espresso">
+            </div>
+            <h3 class="item-name">Double Shot Espresso</h3>
+            <p class="item-price">Rp75,000</p>
+          </div>
+
+          <div class="item" 
+              data-item-name="Caffe Latte" 
+              data-item-path="./assets/images/americano.png" 
+              data-item-price="90000">
+            <div class="image">
+              <img src="./assets/images/americano.png" alt="americano">
+            </div>
+            <h3 class="item-name">Caffe Latte</h3>
+            <p class="item-price">Rp90,000</p>
+          </div>
+
+          <div class="item" 
+              data-item-name="Single Shot Espresso" 
+              data-item-path="./assets/images/espreso.png" 
+              data-item-price="65000">
+            <div class="image">
+              <img src="./assets/images/espreso.png" alt="espresso">
+            </div>
+            <h3 class="item-name">Single Shot Espresso</h3>
+            <p class="item-price">Rp65,000</p>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="sub-menu non-coffee">
+        <h2 class="sub-menu-title poppins bold">NON COFFEE</h2>
+        <div class="sub-menu-content">
+          <div class="item" 
+              data-item-name="Hot Chocolate" 
+              data-item-path="./assets/images/coklat-bening.png" 
+              data-item-price="100000">
+            <div class="image">
+              <img src="./assets/images/coklat-bening.png" alt="coklat">
+            </div>
+            <h3 class="item-name">Hot Chocolate</h3>
+            <p class="item-price">Rp100,000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-menu snack">
+        <h2 class="sub-menu-title poppins bold">SNACK</h2>
+        <div class="sub-menu-content">
+          <div class="item" 
+              data-item-name="French Fries" 
+              data-item-path="./assets/images/kentang gorengs.png" 
+              data-item-price="70000">
+            <div class="image">
+              <img src="./assets/images/kentang gorengs.png" alt="kentang">
+            </div>
+            <h3 class="item-name">French Fries</h3>
+            <p class="item-price">Rp70,000</p>
+          </div>
+
+          <div class="item" 
+              data-item-name="Chicken Pop" 
+              data-item-path="./assets/images/chicken pop.png" 
+              data-item-price="86000">
+            <div class="image">
+              <img src="./assets/images/chicken pop.png" alt="ayam">
+            </div>
+            <h3 class="item-name">Chicken Pop</h3>
+            <p class="item-price">Rp86,000</p>
+          </div>
+
+          <div class="item" 
+              data-item-name="Croissant" 
+              data-item-path="./assets/images/crosan.png" 
+              data-item-price="76000">
+            <div class="image">
+              <img src="./assets/images/crosan.png" alt="crosaint">
+            </div>
+            <h3 class="item-name">Croissant</h3>
+            <p class="item-price">Rp76,000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+  </main>
+
+  <footer>
+    &copy; 2025 All rights reserved.
+  </footer>
+
+  <script src="./js/filterMenu.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/nav.js"></script>
+</body>
+</html>
