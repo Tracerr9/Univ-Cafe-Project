@@ -1,0 +1,358 @@
+main .banner {
+  width: 100vw;
+  height: 550px;
+  position: relative;
+}
+
+main .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+main .banner::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+main .banner .text {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  text-align: center;
+  color: var(--text-color-light);
+  z-index: 3;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: start;
+}
+
+main .banner .text span {
+  font-size: 50px;
+  color: var(--accent-color);
+  line-height: 2;
+}
+
+main .filling-text {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-color-dark);
+}
+
+main .best-seller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+
+main .best-seller h2 {
+  color: var(--text-color-light);
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+main .best-seller .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 20px 20px 20px;
+}
+
+main .best-seller .items .item {
+  width: 100%;
+  background-color: var(--secondary-color);
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+main .best-seller .items .item .item-desc {
+  display: flex;
+}
+
+main .best-seller .items .item .item-image {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+main .best-seller .items .item .item-image img {
+  height: 65px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main .item-name {
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--text-color-light);
+}
+
+main .item-price {
+  font-size: 20px;
+  color: var(--text-color-darker);
+}
+
+main .item-price span {
+  font-size: 16px;
+  color: var(--text-color-light);
+}
+
+main .action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .action a {
+  text-decoration: none;
+  color: var(--text-color-light);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+main .best-seller .items .item .action a:hover {
+  background-color: var(--text-color-light);
+  color: var(--primary-color);
+}
+
+main .reward {
+  padding: 10px 40px;
+}
+
+main .reward .title {
+  color: var(--text-color-dark);
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+main .reward .reward-card {
+  height: 90px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+}
+
+main .reward .reward-card .left {
+  background-color: var(--primary-color);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  margin-right: 14px;
+}
+
+main .reward .reward-card img {
+  width: 65px;
+}
+
+main .reward .action,
+main .short-story .action {
+  display: flex;
+  color: var(--text-color-darker);
+  margin-top: 18px;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+main .short-story .action {
+  padding: 0 20px;
+}
+
+main .short-story .section-title {
+  padding: 20px;
+}
+
+main .short-story .story-content {
+  background-color: var(--primary-color);
+  display: flex;
+  padding: 0;
+  gap: 2rem;
+}
+
+main .short-story .ceo-image img {
+  width: 500px;
+  height: 100%;
+}
+
+main .short-story .story {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main .short-story .story h4 {
+  font-size: 2rem;
+  color: var(--text-color-light);
+}
+
+main .short-story .story p {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  line-height: 1.5;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  main .banner .text {
+    top: 20%;
+    right: 5%;
+    font-size: 32px;
+  }
+
+  main .banner .text span {
+    font-size: 40px;
+  }
+
+
+
+  main .reward .title {
+    font-size: 30px;
+  }
+
+  main .short-story .story-content .ceo-image img {
+    width: 100%;
+  }
+
+  main .short-story .story h4 {
+    font-size: 1.5rem;
+  }
+
+  main .short-story .story p {
+    font-size: 1.2rem;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  main .banner .text {
+    top: 15%;
+    right: 2%;
+    font-size: 24px;
+  }
+
+  main .banner .text span {
+    font-size: 30px;
+  }
+
+  main .best-seller h2 {
+    font-size: 32px;
+  }
+
+  main .reward {
+    padding: 10px 20px;
+  }
+
+  main .reward .title {
+    font-size: 24px;
+  }
+
+  main .reward .reward-card {
+    height: 80px;
+  }
+
+  main .reward .reward-card .left {
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  main .reward .reward-card img {
+    width: 50px;
+  }
+
+  main .reward .reward-card .right .item-name {
+    font-size: 18px;
+  }
+
+  main .reward .reward-card .right .item-price {
+    font-size: 16px;
+  }
+
+  main .reward .reward-card .right .item-price span {
+    font-size: 14px;
+  }
+  
+  main .best-seller .items .item .item-image{
+    width: 60px;
+    height: 60px;
+  }
+
+  main .best-seller .items .item .item-image img {
+    height: 50px;
+  }
+
+  main .best-seller .items .item-text .item-name {
+    font-size: 16px;
+  }
+
+  main .best-seller .items .item-text .item-price {
+    font-size: 14px;
+  }
+
+  main .best-seller .items .action a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  main .short-story .story-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .short-story .ceo-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .short-story .story {
+    padding: 10px;
+    width: 100%;
+  }
+
+  main .short-story .story h4 {
+    font-size: 1.2rem;
+  }
+
+  main .short-story .story p {
+    font-size: 1rem;
+  }
+
+}

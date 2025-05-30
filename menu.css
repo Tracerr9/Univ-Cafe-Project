@@ -1,0 +1,176 @@
+main .main-header {
+  padding: 20px;
+}
+
+main .main-header .title {
+  font-size: 24px;
+  color: var(--text-color-darker);
+}
+
+main .main-header .filter-icon {
+  background-color: var(--accent-color);
+  display: flex;
+  width: fit-content;
+  padding: 0 5px;
+  border-radius: 5px;
+  margin-top: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+main .main-header .filter-icon .filter-modal {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%) translateY(100%);
+  background-color: var(--secondary-color);
+  width: 150px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+main .main-header .filter-icon .filter-modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+main .main-header .filter-icon .filter-modal h3 {
+  color: var(--text-color-light)
+}
+
+main .main-header .filter-icon .filter-modal .filter-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .main-header .filter-icon .filter-modal .filter-option input {
+  width: 15px;
+  height: 15px;
+}
+
+main .main-content {
+  background-color: var(--primary-color);
+  margin-bottom: 20px;
+  padding: 2rem 6rem;
+}
+
+main .main-content .sub-menu {
+  margin-top: 2rem;
+}
+
+main .main-content .sub-menu.hide {
+  display: none;
+}
+
+main .main-content .sub-menu h2 {
+  font-size: 16px;
+  color: var(--text-color-light);
+}
+
+main .main-content .sub-menu .sub-menu-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+main .main-content .sub-menu .sub-menu-content .item {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 360px;
+  transition: all 0.3s ease;
+}
+
+main .main-content .sub-menu .sub-menu-content .item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main .main-content .sub-menu .sub-menu-content .item .image {
+  width: 100%;
+  height: 200px;
+  background-color: var(--text-color-light);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .main-content .sub-menu .sub-menu-content .item img {
+  width: 100%;
+  height: 100%;
+}
+
+main .main-content .sub-menu .sub-menu-content .item h3 {
+  font-size: 20px;
+  color: var(--text-color-light);
+  margin-top: 10px;
+}
+
+main .main-content .sub-menu .sub-menu-content .item p {
+  font-size: 16px;
+  color: var(--text-color-darker);
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  main .main-content {
+    padding: 1rem;
+  }
+
+  main .main-content .sub-menu .sub-menu-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main .main-content .sub-menu .sub-menu-content .item {
+    height: auto;
+  }
+
+  main .main-content .sub-menu .sub-menu-content .item .image {
+    height: 150px;
+  }
+
+  main .main-content .sub-menu .sub-menu-content .item h3 {
+    font-size: 18px;
+  }
+
+  main .main-content .sub-menu .sub-menu-content .item p {
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  main .main-content .sub-menu .sub-menu-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .main-content .sub-menu .sub-menu-content .item {
+    height: auto;
+  }
+
+  main .main-content .sub-menu .sub-menu-content .item .image {
+    height: 120px;
+  }
+
+  main .main-content .sub-menu .sub-menu-content .item h3 {
+    font-size: 14px;
+    line-height: 1rem;
+  }
+
+  main .main-content .sub-menu .sub-menu-content .item p {
+    font-size: 12px;
+  }
+}

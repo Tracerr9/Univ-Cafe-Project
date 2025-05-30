@@ -1,0 +1,109 @@
+main .main-header {
+  margin: 20px;
+}
+
+main .main-header .title {
+  font-size: 24px;
+  color: var(--text-color-darker);
+}
+
+main .banner {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+}
+
+main .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+main .banner::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+main .story {
+  padding: 2rem 5rem;
+}
+
+main .story h2 {
+  font-size: 2rem;
+  color: var(--text-color-darker);
+}
+
+main .story.not-ceo h2 {
+  font-size: 1.3rem;
+  color: var(--text-color-darker);
+}
+
+main .story p {
+  font-size: 1.2rem;
+  color: var(--text-color-dark);
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  main .main-header {
+    margin: 10px;
+  }
+
+  main .main-header .title {
+    font-size: 1.5rem;
+  }
+
+  main .story {
+    padding: 1rem;
+  }
+
+  main .story h2 {
+    font-size: 1.5rem;
+  }
+
+  main .story p {
+    font-size: 1rem;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+
+  main .main-header {
+    margin: 8px;
+  }
+
+  main .main-header .title {
+    font-size: 1.2rem;
+  }
+
+  main .banner {
+    height: 250px;
+  }
+
+  main .story {
+    padding: 0.5rem;
+  }
+
+  main .story h2 {
+    font-size: 1.2rem;
+  }
+
+  main .story p {
+    font-size: 0.9rem;
+  }
+  
+}

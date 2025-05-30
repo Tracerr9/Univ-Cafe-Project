@@ -1,0 +1,158 @@
+main .call-to-action {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+main .call-to-action p {
+  color: var(--text-color-light);
+  font-size: 2.5rem;
+}
+
+main .call-to-action p span {
+  color: var(--text-color-dark);
+  font-size: 1rem;
+}
+
+main .download-link {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 6rem;
+}
+
+main .download-link a img {
+  height: 120px;
+}
+
+
+main .reward {
+  padding: 10px 40px;
+}
+
+main .reward .title {
+  color: var(--text-color-darker);
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+main .reward .reward-card {
+  margin-top: 16px;
+}
+
+main .item-name {
+  font-size: 23px;
+  line-height: 1.2;
+  color: var(--text-color-light);
+}
+
+main .item-price {
+  font-size: 20px;
+  color: var(--text-color-darker);
+}
+
+main .item-price span {
+  font-size: 16px;
+  color: var(--text-color-light);
+}
+
+main .reward .reward-card {
+  height: 90px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+}
+
+main .reward .reward-card .left {
+  background-color: var(--primary-color);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  margin-right: 14px;
+}
+
+main .reward .reward-card img {
+  width: 65px;
+}
+
+main .reward .action,
+main .short-story .action {
+  display: flex;
+  color: var(--text-color-darker);
+  margin-top: 18px;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  main .call-to-action {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  main .call-to-action p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  main .download-link {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .download-link a img {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  main .reward .reward-card {
+    align-items: center;
+    height: 60px;
+  }
+
+  main .reward .reward-card .left {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  main .reward .reward-card .left img {
+    width: 50px;
+  }
+
+  main .reward .reward-card .right .item-name {
+    font-size: 16px;
+  }
+
+  main .reward .reward-card .right .item-price {
+    font-size: 14px;
+  }
+
+  main .reward .reward-card .right .item-price span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  main .reward .title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  main .reward .reward-card .right .item-name {
+    font-size: 12px;
+  }
+
+  main .reward .reward-card .right .item-price {
+    font-size: 10px;
+  }
+
+  main .reward .reward-card .right .item-price span {
+    font-size: 8px;
+  }
+}

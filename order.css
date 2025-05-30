@@ -1,0 +1,181 @@
+main .title {
+  color: var(--text-color-darker);
+  font-size: 1.5rem;
+  margin: 20px 0;
+  padding: 0 6rem;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 40px 6rem;
+  padding: 20px 50px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+main form .form-group {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main form .form-group .form-input {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+main form .form-group .form-input label {
+  font-size: 1.2rem;
+  color: var(--text-color-light);
+}
+
+main form .form-group .form-input input {
+  padding: 10px;
+  border: 1px solid var(--text-color-light);
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 5px;
+  width: 100%;
+}
+
+main form .add-ons {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+main form .add-ons .add-on {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0;
+  background-color: var(--background-color);
+  padding: 10px;
+  border-radius: 6px;
+}
+
+main form .add-ons .add-on img {
+  width: 60px;
+}
+
+main form .add-ons .add-on p {
+  font-size: 0.7rem;
+  color: var(--text-color-darker);
+  text-align: center;
+}
+
+main form .add-ons .add-on p span {
+  font-size: 0.5rem;
+  color: var(--text-color-dark);
+}
+
+main form .summary {
+  background-color: var(--background-color);
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main form .summary .items {
+  height: 200px;
+  overflow-y: auto;
+}
+
+main form .summary .items .item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-bottom: 1px solid var(--text-color-dark);
+}
+
+main form .summary .items .item .item-image img {
+  height: 40px;
+  width: 40px;
+}
+
+main form .summary .items .item .item-desc .name {
+  font-size: 1rem;
+  color: var(--text-color-darker);
+}
+
+main form .summary .items .item .item-desc .price {
+  font-size: 0.8rem;
+  color: var(--text-color-dark);
+}
+
+main form button {
+  background-color: var(--accent-color);
+  color: var(--text-color-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main form {
+    padding: 20px;
+    margin: 20px 6rem;
+  }
+
+  main form .form-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  main form .form-group .form-input {
+    width: 100%;
+  }
+
+  main form .form-group .form-input label {
+    font-size: 1rem;
+  }
+
+  main form .add-ons {
+    align-items: center;
+  }
+
+  main form .summary {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  main .title {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+  }
+
+  main form {
+    padding: 10px;
+    margin: 10px 2rem;
+  }
+
+  main form .form-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  main form .form-group .form-input {
+    width: 100%;
+  }
+
+  main form .add-ons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main form .summary {
+    width: 100%;
+  }
+  
+}
